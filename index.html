@@ -133,6 +133,7 @@ const TIPOS = {
            w:8.52, h:6.76, x0:-1.24, fossos:[]}
 };
 // cena: tipo, nome, área, arquivo, posição da câmera, retângulo na planta, altura do olho acima do piso
+const VERSAO_PANOS = "2909-0930";   // trocar a cada nova leva de 360 (fura o cache do GitHub Pages)
 const CENAS = {
   estacionamento:{tipo:"predio", nome:"Estacionamento", area:"8 vagas, 2 cobertas", pano:"x_estacionamento", cam:[-13.8,4.9], olho:1.6, yaw:0},
   hall_terreo:   {tipo:"predio", nome:"Hall de entrada", area:"2,40 m de largura · escada de 1,20", pano:"x_hall_terreo", cam:[-1.9,6.9], olho:1.55, yaw:-100},
@@ -204,7 +205,7 @@ function criaPassagem(div, txt){
 }
 const cenas = {};
 for (const [id, c] of Object.entries(CENAS)) {
-  cenas[id] = {type:"equirectangular", panorama:"panos/" + c.pano + ".jpg", yaw:c.yaw ?? 0, pitch:-4, hfov:100,
+  cenas[id] = {type:"equirectangular", panorama:"panos/" + c.pano + ".jpg?v=" + VERSAO_PANOS, yaw:c.yaw ?? 0, pitch:-4, hfov:100,
     hotSpots:(PASSAGENS[id]||[]).map(([alvo, p, rot, yawChegada]) => ({
       yaw:yawPara(c.cam, p), pitch:pitchPara(c.cam, p, c.olho||1.55), type:"scene", sceneId:alvo,
       targetYaw: yawChegada ?? (CENAS[alvo].tipo === c.tipo ? yawPara(p, CENAS[alvo].cam) : CENAS[alvo].yaw), targetPitch:-4,
