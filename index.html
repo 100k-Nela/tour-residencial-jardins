@@ -46,7 +46,9 @@ body{margin:0;background:var(--verde-fundo);color:var(--areia);font-family:var(-
 .sala-g rect{fill:rgba(239,231,218,.06);stroke:rgba(239,231,218,.35);stroke-width:.04;cursor:pointer;transition:fill .2s}
 .sala-g:hover rect{fill:rgba(239,231,218,.14)}
 .sala-g.ativo rect{fill:rgba(197,106,67,.30);stroke:var(--terracota-claro)}
+.sala-g,.predio-g{outline:none}
 .sala-g:focus-visible rect{stroke:#fff;stroke-width:.08}
+.predio-g:focus-visible rect{stroke:#fff;stroke-width:2}
 .sala-g text{fill:var(--areia);font-family:var(--fonte);pointer-events:none}
 .fosso rect{fill:url(#hachura);stroke:rgba(239,231,218,.2);stroke-width:.03}
 .lista{display:grid;gap:2px;margin:0;padding:0;list-style:none}
@@ -133,7 +135,7 @@ const TIPOS = {
            w:8.52, h:6.76, x0:-1.24, fossos:[]}
 };
 // cena: tipo, nome, área, arquivo, posição da câmera, retângulo na planta, altura do olho acima do piso
-const VERSAO_PANOS = "2909-0930";   // trocar a cada nova leva de 360 (fura o cache do GitHub Pages)
+const VERSAO_PANOS = "2909-0940";   // trocar a cada nova leva de 360 (fura o cache do GitHub Pages)
 const CENAS = {
   estacionamento:{tipo:"predio", nome:"Estacionamento", area:"8 vagas, 2 cobertas", pano:"x_estacionamento", cam:[-13.8,4.9], olho:1.6, yaw:0},
   hall_terreo:   {tipo:"predio", nome:"Hall de entrada", area:"2,40 m de largura · escada de 1,20", pano:"x_hall_terreo", cam:[-1.9,6.9], olho:1.55, yaw:-100},
