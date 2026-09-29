@@ -127,8 +127,8 @@ body{margin:0;background:var(--verde-fundo);color:var(--areia);font-family:var(-
 // O prédio usa as coordenadas do apto 201 (mesma origem). O 2 quartos usa as dele.
 const TIPOS = {
   predio: {aba:"O prédio", sub:"Estacionamento, hall e escada", titulo:"Residencial Jardins I · o prédio", unidades:"8 apartamentos em 3 pavimentos · estacionamento para 8 carros", primeira:"estacionamento"},
-  terreo: {aba:"Térreo", sub:"101 · 102", titulo:"Térreo · 3 quartos com pátio", unidades:"Unidades 101 e 102", primeira:"t_sala",
-           w:14.44, h:4.78, fossos:[{x:[4.67,6.17],y:[0,1.38]}]},
+  terreo: {aba:"Térreo", sub:"101 · 102", titulo:"Térreo · 3 quartos", unidades:"Unidades 101 e 102", primeira:"t_sala",
+           w:14.44, h:4.78, fossos:[{x:[4.67,6.17],y:[0,1.38]},{x:[8.81,11.92],y:[0,1.38]}]},
   q3:     {aba:"3 quartos", sub:"201 · 202 · 301 · 302", titulo:"Apartamento de 3 quartos", unidades:"Unidades 201, 202, 301 e 302", primeira:"q_sala",
            w:14.44, h:4.78, fossos:[{x:[4.67,6.17],y:[0,1.38]},{x:[8.81,11.92],y:[0,1.38]}]},
   q2:     {aba:"2 quartos com varanda", sub:"203 · 303", titulo:"Apartamento de 2 quartos com varanda", unidades:"Unidades 203 e 303", primeira:"d_sala",
@@ -157,7 +157,6 @@ const CENAS = {
   t_corredor:{tipo:"terreo", nome:"Circulação", area:"5,73", pano:"t_corredor", x:[4.67,11.04], y:[3.88,4.78], cam:[7.85,4.33], yaw:180},
   t_quarto3: {tipo:"terreo", nome:"Quarto", area:"9,02", pano:"t_quarto3", x:[6.29,8.69], y:[0,3.76], cam:[6.95,3.20], yaw:-60},
   t_quarto2: {tipo:"terreo", nome:"Escritório ou hóspedes", area:"7,02", pano:"t_quarto2", x:[8.81,11.92], y:[1.50,3.76], cam:[10.60,2.95], yaw:-90},
-  t_patio:   {tipo:"terreo", nome:"Pátio privativo", area:"4,29", pano:"t_patio", x:[8.81,11.92], y:[0,1.38], cam:[9.15,0.95], yaw:0},
   t_quarto1: {tipo:"terreo", nome:"Quarto do casal", area:"12,37", pano:"t_quarto1", x:[12.04,14.44], y:[0,4.78], cam:[12.95,3.75], yaw:-150},
 
   d_sala:    {tipo:"q2", nome:"Sala e jantar", area:"14,02", pano:"2q_sala", x:[3.42,7.28], y:[3.30,6.76], cam:[5.60,4.55], yaw:180},
@@ -166,7 +165,7 @@ const CENAS = {
   d_banheiro:{tipo:"q2", nome:"Banheiro", area:"2,98", pano:"2q_banheiro", x:[2.97,4.31], y:[0,2.23], cam:[3.85,1.55], yaw:-120},
   d_quarto1: {tipo:"q2", nome:"Quarto do casal", area:"9,40", pano:"2q_quarto1", x:[4.43,7.28], y:[0,3.30], cam:[4.95,2.35], yaw:-30},
   d_quarto2: {tipo:"q2", nome:"Quarto com varanda", area:"9,40", pano:"2q_quarto2", x:[0,2.85], y:[0,3.30], cam:[2.45,2.55], yaw:-90},
-  d_varanda: {tipo:"q2", nome:"Varanda", area:"3,62", pano:"2q_varanda", x:[-1.12,-0.12], y:[-0.16,3.46], cam:[-0.45,2.70], yaw:-90}
+  d_varanda: {tipo:"q2", nome:"Varanda", area:"2,90", pano:"2q_varanda", x:[-1.12,-0.12], y:[-0.16,3.46], cam:[-0.45,2.70], yaw:-90}
 };
 // passagens: [destino, ponto na planta DESTA cena, rótulo opcional, yaw ao chegar opcional]
 const PASSAGENS = {
@@ -185,9 +184,8 @@ const PASSAGENS = {
   t_servico:[["t_cozinha",[3.62,2.10],"Cozinha",90]],
   t_corredor:[["t_cozinha",[4.61,4.33]],["t_banheiro",[5.70,3.82]],["t_quarto3",[6.75,3.82]],["t_quarto2",[9.26,3.82]],["t_quarto1",[10.98,4.33]]],
   t_banheiro:[["t_corredor",[5.70,3.82]]],
-  t_quarto3:[["t_corredor",[6.75,3.82]],["t_patio",[8.69,0.69],"Pátio"]],
-  t_quarto2:[["t_corredor",[9.26,3.82]],["t_patio",[10.36,1.44],"Pátio"]],
-  t_patio:[["t_quarto3",[8.69,0.69]],["t_quarto2",[10.36,1.44]]],
+  t_quarto3:[["t_corredor",[6.75,3.82]]],
+  t_quarto2:[["t_corredor",[9.26,3.82]]],
   t_quarto1:[["t_corredor",[10.98,4.33]]],
 
   d_sala:[["d_cozinha",[3.40,4.90]],["d_quarto1",[4.10,3.30]],["d_banheiro",[3.64,3.05]],["d_quarto2",[3.10,3.25]],["hall_andar",[7.34,6.28],"Sair para o hall",0]],
