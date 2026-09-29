@@ -212,7 +212,9 @@ for (const [id, c] of Object.entries(CENAS)) {
       targetYaw: yawChegada ?? (CENAS[alvo].tipo === c.tipo ? yawPara(p, CENAS[alvo].cam) : CENAS[alvo].yaw), targetPitch:-4,
       createTooltipFunc:criaPassagem, createTooltipArgs: rot || CENAS[alvo].nome }))};
 }
-const viewer = pannellum.viewer("pano", {default:{firstScene:"estacionamento", sceneFadeDuration:600, autoLoad:true, showControls:false, compass:false, minHfov:55, maxHfov:115, friction:.12}, scenes:cenas});
+// ?cena=q_sala abre direto num cômodo (usado pelos botões do site)
+const CENA_INICIAL = (()=>{ const c = new URLSearchParams(location.search).get("cena"); return c && CENAS[c] ? c : "estacionamento"; })();
+const viewer = pannellum.viewer("pano", {default:{firstScene:CENA_INICIAL, sceneFadeDuration:600, autoLoad:true, showControls:false, compass:false, minHfov:55, maxHfov:115, friction:.12}, scenes:cenas});
 
 // ---------- abas
 const abas = document.getElementById("abas");
