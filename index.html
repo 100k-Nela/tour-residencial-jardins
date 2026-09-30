@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <title>Tour 360 · Residencial Jardins I</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#16362C">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -9,117 +10,158 @@
 .pnlm-container{margin:0;padding:0;overflow:hidden;position:relative;cursor:default;width:100%;height:100%;font-family:Helvetica,"Nimbus Sans L","Liberation Sans",Arial,sans-serif;background:#f4f4f4 url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2267%22%20height%3D%22100%22%20viewBox%3D%220%200%2067%20100%22%3E%0A%3Cpath%20stroke%3D%22%23ccc%22%20fill%3D%22none%22%20d%3D%22M33.5%2C50%2C0%2C63%2C33.5%2C75%2C67%2C63%2C33.5%2C50m-33.5-50%2C67%2C25m-0.5%2C0%2C0%2C75m-66.5-75%2C67-25m-33.5%2C75%2C0%2C25m0-100%2C0%2C50%22%2F%3E%0A%3C%2Fsvg%3E%0A') repeat;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;user-select:none;outline:0;line-height:1.4;contain:content}.pnlm-container *{box-sizing:content-box}.pnlm-ui{position:absolute;width:100%;height:100%;z-index:1}.pnlm-grab{cursor:grab;cursor:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2226%22%20width%3D%2226%22%3E%0A%3Cpath%20stroke%3D%22%23000%22%20stroke-width%3D%221px%22%20fill%3D%22%23fff%22%20d%3D%22m15.3%2020.5s6.38-6.73%204.64-8.24-3.47%201.01-3.47%201.01%203.61-5.72%201.41-6.49c-2.2-0.769-3.33%204.36-3.33%204.36s0.873-5.76-1.06-5.76-1.58%205.39-1.58%205.39-0.574-4.59-2.18-4.12c-1.61%200.468-0.572%205.51-0.572%205.51s-1.58-4.89-2.93-3.79c-1.35%201.11%200.258%205.25%200.572%206.62%200.836%202.43%202.03%202.94%202.17%205.55%22%2F%3E%0A%3C%2Fsvg%3E%0A') 12 8,default}.pnlm-grabbing{cursor:grabbing;cursor:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2226%22%20width%3D%2226%22%3E%0A%3Cpath%20stroke%3D%22%23000%22%20stroke-width%3D%221px%22%20fill%3D%22%23fff%22%20d%3D%22m15.3%2020.5s5.07-5.29%203.77-6.74c-1.31-1.45-2.53%200.14-2.53%200.14s2.74-3.29%200.535-4.06c-2.2-0.769-2.52%201.3-2.52%201.3s0.81-2.13-1.12-2.13-1.52%201.77-1.52%201.77-0.261-1.59-1.87-1.12c-1.61%200.468-0.874%202.17-0.874%202.17s-0.651-1.55-2-0.445c-1.35%201.11-0.68%202.25-0.365%203.62%200.836%202.43%202.03%202.94%202.17%205.55%22%2F%3E%0A%3C%2Fsvg%3E%0A') 12 8,default}.pnlm-sprite{background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2226%22%20height%3D%22208%22%3E%0A%3Ccircle%20fill-opacity%3D%22.78%22%20cy%3D%22117%22%20cx%3D%2213%22%20r%3D%2211%22%20fill%3D%22%23fff%22%2F%3E%0A%3Ccircle%20fill-opacity%3D%22.78%22%20cy%3D%22143%22%20cx%3D%2213%22%20r%3D%2211%22%20fill%3D%22%23fff%22%2F%3E%0A%3Ccircle%20cy%3D%22169%22%20cx%3D%2213%22%20r%3D%227%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%222%22%2F%3E%0A%3Ccircle%20cy%3D%22195%22%20cx%3D%2213%22%20r%3D%227%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%222%22%2F%3E%0A%3Ccircle%20cx%3D%2213%22%20cy%3D%22195%22%20r%3D%222.5%22%2F%3E%0A%3Cpath%20d%3D%22m5%2083v6h2v-4h4v-2zm10%200v2h4v4h2v-6zm-5%205v6h6v-6zm-5%205v6h6v-2h-4v-4zm14%200v4h-4v2h6v-6z%22%2F%3E%0A%3Cpath%20d%3D%22m13%20110a7%207%200%200%200%20-7%207%207%207%200%200%200%207%207%207%207%200%200%200%207%20-7%207%207%200%200%200%20-7%20-7zm-1%203h2v2h-2zm0%203h2v5h-2z%22%2F%3E%0A%3Cpath%20d%3D%22m5%2057v6h2v-4h4v-2zm10%200v2h4v4h2v-6zm-10%2010v6h6v-2h-4v-4zm14%200v4h-4v2h6v-6z%22%2F%3E%0A%3Cpath%20d%3D%22m17%2038v2h-8v-2z%22%2F%3E%0A%3Cpath%20d%3D%22m12%209v3h-3v2h3v3h2v-3h3v-2h-3v-3z%22%2F%3E%0A%3Cpath%20d%3D%22m13%20136-6.125%206.125h4.375v7.875h3.5v-7.875h4.375z%22%2F%3E%0A%3Cpath%20d%3D%22m10.428%20173.33v-5.77l5-2.89v5.77zm1-1.73%203-1.73-3.001-1.74z%22%2F%3E%0A%3C%2Fsvg%3E%0A')}.pnlm-container:-moz-full-screen{height:100%!important;width:100%!important;position:static!important}.pnlm-container:-webkit-full-screen{height:100%!important;width:100%!important;position:static!important}.pnlm-container:-ms-fullscreen{height:100%!important;width:100%!important;position:static!important}.pnlm-container:fullscreen{height:100%!important;width:100%!important;position:static!important}.pnlm-render-container{cursor:inherit;position:absolute;height:100%;width:100%}.pnlm-controls{margin-top:4px;background-color:#fff;border:1px solid #999;border-color:rgba(0,0,0,0.4);border-radius:3px;cursor:pointer;z-index:2;-webkit-transform:translateZ(9999px);transform:translateZ(9999px)}.pnlm-control:hover{background-color:#f8f8f8}.pnlm-controls-container{position:absolute;top:0;left:4px;z-index:1}.pnlm-zoom-controls{width:26px;height:52px}.pnlm-zoom-in{width:100%;height:50%;position:absolute;top:0;border-radius:3px 3px 0 0}.pnlm-zoom-out{width:100%;height:50%;position:absolute;bottom:0;background-position:0 -26px;border-top:1px solid #ddd;border-top-color:rgba(0,0,0,0.10);border-radius:0 0 3px 3px}.pnlm-fullscreen-toggle-button,.pnlm-orientation-button,.pnlm-hot-spot-debug-indicator{width:26px;height:26px}.pnlm-hot-spot-debug-indicator{position:absolute;top:50%;left:50%;width:26px;height:26px;margin:-13px 0 0 -13px;background-color:rgba(255,255,255,0.5);border-radius:13px;display:none}.pnlm-orientation-button-inactive{background-position:0 -156px}.pnlm-orientation-button-active{background-position:0 -182px}.pnlm-fullscreen-toggle-button-inactive{background-position:0 -52px}.pnlm-fullscreen-toggle-button-active{background-position:0 -78px}.pnlm-panorama-info{position:absolute;bottom:4px;background-color:rgba(0,0,0,0.7);border-radius:0 3px 3px 0;padding-right:10px;color:#fff;text-align:left;display:none;z-index:2;-webkit-transform:translateZ(9999px);transform:translateZ(9999px)}.pnlm-title-box{position:relative;font-size:20px;display:table;padding-left:5px;margin-bottom:3px}.pnlm-author-box{position:relative;font-size:12px;display:table;padding-left:5px}.pnlm-load-box{position:absolute;top:50%;left:50%;width:200px;height:150px;margin:-75px 0 0 -100px;background-color:rgba(0,0,0,0.7);border-radius:3px;text-align:center;font-size:20px;display:none;color:#fff}.pnlm-load-box p{margin:20px 0}.pnlm-lbox{position:absolute;top:50%;left:50%;width:20px;height:20px;margin:-10px 0 0 -10px;display:none}.pnlm-loading{animation-duration:1.5s;-webkit-animation-duration:1.5s;animation-name:pnlm-mv;-webkit-animation-name:pnlm-mv;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;animation-timing-function:linear;-webkit-animation-timing-function:linear;height:10px;width:10px;background-color:#fff;position:relative}@keyframes pnlm-mv{from{left:0;top:0}25%{left:10px;top:0}50%{left:10px;top:10px}75%{left:0;top:10px}to{left:0;top:0}}@-webkit-keyframes pnlm-mv{from{left:0;top:0}25%{left:10px;top:0}50%{left:10px;top:10px}75%{left:0;top:10px}to{left:0;top:0}}.pnlm-load-button{position:absolute;top:50%;left:50%;width:200px;height:100px;margin:-50px 0 0 -100px;background-color:rgba(0,0,0,.7);border-radius:3px;text-align:center;font-size:20px;display:table;color:#fff;cursor:pointer}.pnlm-load-button:hover{background-color:rgba(0,0,0,.8)}.pnlm-load-button p{display:table-cell;vertical-align:middle}.pnlm-info-box{font-size:15px;position:absolute;top:50%;left:50%;width:200px;height:150px;margin:-75px 0 0 -100px;background-color:#000;border-radius:3px;display:table;text-align:center;color:#fff;table-layout:fixed}.pnlm-info-box a,.pnlm-author-box a{color:#fff;word-wrap:break-word;overflow-wrap:break-word}.pnlm-info-box p{display:table-cell;vertical-align:middle;padding:0 5px 0 5px}.pnlm-error-msg{display:none}.pnlm-about-msg{font-size:11px;line-height:11px;color:#fff;padding:5px 8px 5px 8px;background:rgba(0,0,0,0.7);border-radius:3px;position:absolute;top:50px;left:50px;display:none;opacity:0;-moz-transition:opacity .3s ease-in-out;-webkit-transition:opacity .3s ease-in-out;-o-transition:opacity .3s ease-in-out;-ms-transition:opacity .3s ease-in-out;transition:opacity .3s ease-in-out;z-index:1}.pnlm-about-msg a:link,.pnlm-about-msg a:visited{color:#fff}.pnlm-about-msg a:hover,.pnlm-about-msg a:active{color:#eee}.pnlm-hotspot-base{position:absolute;visibility:hidden;cursor:default;vertical-align:middle;top:0;z-index:1}.pnlm-hotspot{height:26px;width:26px;border-radius:13px}.pnlm-hotspot:hover{background-color:rgba(255,255,255,0.2)}.pnlm-hotspot.pnlm-info{background-position:0 -104px}.pnlm-hotspot.pnlm-scene{background-position:0 -130px}div.pnlm-tooltip span{visibility:hidden;position:absolute;border-radius:3px;background-color:rgba(0,0,0,0.7);color:#fff;text-align:center;max-width:200px;padding:5px 10px;margin-left:-220px;cursor:default}div.pnlm-tooltip:hover span{visibility:visible}div.pnlm-tooltip:hover span:after{content:'';position:absolute;width:0;height:0;border-width:10px;border-style:solid;border-color:rgba(0,0,0,0.7) transparent transparent transparent;bottom:-20px;left:-10px;margin:0 50%}.pnlm-compass{position:absolute;width:50px;height:50px;right:4px;bottom:4px;border-radius:25px;background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2250%22%20width%3D%2250%22%3E%0A%3Cpath%20d%3D%22m24.5078%206-3.2578%2018h7.5l-3.25781-18h-0.984376zm-3.2578%2020%203.2578%2018h0.9844l3.2578-18h-7.5zm1.19531%200.9941h5.10938l-2.5547%2014.1075-2.5547-14.1075z%22%2F%3E%0A%3C%2Fsvg%3E%0A');cursor:default;display:none}.pnlm-world{position:absolute;left:50%;top:50%}.pnlm-face{position:absolute;-webkit-transform-origin:0 0;transform-origin:0 0}.pnlm-dragfix,.pnlm-preview-img{position:absolute;height:100%;width:100%}.pnlm-preview-img{background-size:cover;background-position:center}.pnlm-lbar{width:150px;margin:0 auto;border:#fff 1px solid;height:6px}.pnlm-lbar-fill{background:#fff;height:100%;width:0}.pnlm-lmsg{font-size:12px}.pnlm-fade-img{position:absolute;top:0;left:0}.pnlm-pointer{cursor:pointer}
 :root{
   color-scheme: dark;
-  --verde:#1F4A3C; --verde-fundo:#16362C; --verde-claro:#2B5E4C;
-  --terracota:#C56A43; --terracota-claro:#E9A07F; --areia:#EFE7DA; --areia-suave:#CFC6B6;
-  --linha: rgba(239,231,218,.16);
+  --verde:#1F4A3C; --verde-fundo:#16362C; --terracota:#C56A43; --terracota-claro:#E9A07F; --areia:#EFE7DA; --areia-suave:#CFC6B6;
+  --vidro: rgba(18,44,36,.78); --linha: rgba(239,231,218,.18);
   --fonte:"Outfit", "Segoe UI", system-ui, sans-serif;
+  --seg-top: env(safe-area-inset-top, 0px); --seg-bot: env(safe-area-inset-bottom, 0px);
 }
-html,body{height:100%}
-body{margin:0;background:var(--verde-fundo);color:var(--areia);font-family:var(--fonte);-webkit-font-smoothing:antialiased}
-.app{height:100%;display:grid;grid-template-rows:auto auto 1fr;min-height:0}
-.topo{display:flex;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid var(--linha);background:var(--verde)}
-.marca{display:flex;align-items:center;gap:10px;flex:none}
-.marca .c{font:600 7.5px/1 var(--fonte);letter-spacing:.42em}
-.marca .j{font:700 22px/0.9 var(--fonte);letter-spacing:-.02em}
-.titulo{margin-left:auto;text-align:right;min-width:0}
-.titulo h1{margin:0;font:600 15px/1.2 var(--fonte);text-wrap:balance}
-.titulo p{margin:2px 0 0;font:400 12.5px/1.3 var(--fonte);color:var(--areia-suave)}
-.abas{display:flex;gap:6px;padding:8px 12px;border-bottom:1px solid var(--linha);overflow-x:auto;background:var(--verde-fundo)}
-.abas button{all:unset;cursor:pointer;white-space:nowrap;padding:8px 14px;border-radius:999px;font:500 14px/1 var(--fonte);color:var(--areia);border:1px solid var(--linha)}
-.abas button small{font-weight:400;color:var(--areia-suave);margin-left:6px}
-.abas button[aria-pressed="true"]{background:var(--terracota);border-color:var(--terracota)}
-.abas button[aria-pressed="true"] small{color:var(--areia)}
-.abas button:focus-visible{outline:2px solid var(--terracota-claro);outline-offset:2px}
-.corpo{display:grid;grid-template-columns:1fr 360px;min-height:0}
-.visor{position:relative;min-height:0;background:#0f241d}
-#pano{position:absolute;inset:0}
-.comodo-atual{position:absolute;left:16px;top:14px;z-index:5;pointer-events:none;
-  background:rgba(22,54,44,.82);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
-  border:1px solid var(--linha);border-radius:10px;padding:8px 12px}
-.comodo-atual b{display:block;font:600 16px/1.2 var(--fonte)}
-.comodo-atual span{font:400 12.5px/1.3 var(--fonte);color:var(--areia-suave);font-variant-numeric:tabular-nums}
-.dica{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:5;pointer-events:none;
-  font:400 12.5px/1 var(--fonte);color:var(--areia);background:rgba(22,54,44,.75);padding:8px 12px;border-radius:999px;white-space:nowrap;transition:opacity .6s}
-.painel{border-left:1px solid var(--linha);display:flex;flex-direction:column;gap:16px;padding:16px;overflow:auto;min-height:0}
-.painel h2{margin:0;font:500 11px/1 var(--fonte);letter-spacing:.16em;text-transform:uppercase;color:var(--areia-suave)}
-.planta{background:var(--verde);border:1px solid var(--linha);border-radius:12px;padding:10px}
-.planta svg{display:block;width:100%;height:auto}
-.sala-g rect{fill:rgba(239,231,218,.06);stroke:rgba(239,231,218,.35);stroke-width:.04;cursor:pointer;transition:fill .2s}
-.sala-g:hover rect{fill:rgba(239,231,218,.14)}
-.sala-g.ativo rect{fill:rgba(197,106,67,.30);stroke:var(--terracota-claro)}
-.sala-g,.predio-g{outline:none}
-.sala-g:focus-visible rect{stroke:#fff;stroke-width:.08}
-.predio-g:focus-visible rect{stroke:#fff;stroke-width:2}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0;overflow:hidden;overscroll-behavior:none}
+body{background:#0f241d;color:var(--areia);font-family:var(--fonte);-webkit-font-smoothing:antialiased}
+button{font-family:var(--fonte)}
+#pano{position:fixed!important;inset:0;width:100vw;height:100dvh;z-index:0;isolation:isolate}
+.pnlm-load-box,.pnlm-about-msg{display:none!important}
+
+/* ---------- barra de cima */
+.topo{position:fixed;left:0;right:0;top:0;z-index:20;display:flex;align-items:center;gap:10px;
+  padding:calc(10px + var(--seg-top)) 12px 10px;background:linear-gradient(180deg,rgba(10,26,21,.72),rgba(10,26,21,0));pointer-events:none}
+.topo>*{pointer-events:auto}
+.b-redondo,.b-apto,.onde{pointer-events:auto!important}   /* all:unset zerava o pointer-events herdado da barra */
+.b-redondo{all:unset;cursor:pointer;flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--vidro);
+  border:1px solid var(--linha);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.b-redondo svg{width:24px;height:24px}
+.onde{flex:1;min-width:0;text-align:center}
+.onde b{display:block;font:600 19px/1.15 var(--fonte);text-shadow:0 1px 8px rgba(0,0,0,.45);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.onde span{font:400 13px/1.3 var(--fonte);color:var(--areia);opacity:.85;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.b-apto{all:unset;cursor:pointer;flex:none;display:flex;align-items:center;gap:8px;height:48px;padding:0 14px 0 16px;border-radius:999px;
+  background:var(--terracota);color:#fff;font:600 15px/1 var(--fonte);box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.b-apto svg{width:18px;height:18px}
+
+/* ---------- barra de baixo: cômodos em botões grandes */
+.base{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:26px 0 calc(12px + var(--seg-bot));
+  background:linear-gradient(0deg,rgba(10,26,21,.85) 40%,rgba(10,26,21,0))}
+.base__rotulo{margin:0 16px 8px;font:500 13px/1 var(--fonte);color:var(--areia);opacity:.9;display:flex;align-items:center;gap:8px}
+.comodos{display:flex;gap:10px;overflow-x:auto;padding:4px 16px 4px;scroll-snap-type:x proximity;scrollbar-width:none}
+.comodos::-webkit-scrollbar{display:none}
+.comodos button{all:unset;cursor:pointer;scroll-snap-align:start;flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  min-width:92px;height:84px;padding:0 12px;border-radius:18px;background:var(--vidro);border:1.5px solid var(--linha);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font:600 14px/1.1 var(--fonte);color:var(--areia);text-align:center;transition:transform .15s,background .2s}
+.comodos button svg{width:28px;height:28px}
+.comodos button:active{transform:scale(.95)}
+.comodos button[aria-current="true"]{background:var(--terracota);border-color:var(--terracota);color:#fff}
+.comodos .b-planta{background:rgba(239,231,218,.12);border-style:dashed}
+.comodos button:focus-visible,.b-redondo:focus-visible,.b-apto:focus-visible{outline:3px solid var(--terracota-claro);outline-offset:2px}
+
+/* ---------- círculo de andar dentro do 360 */
+.passagem{width:58px;height:58px;margin:-29px 0 0 -29px;border-radius:50%;cursor:pointer;background:rgba(197,106,67,.92);border:3px solid #fff;
+  box-shadow:0 6px 22px rgba(0,0,0,.4);display:grid;place-items:center;animation:pulsa 2.2s ease-out infinite}
+.passagem svg{width:26px;height:26px}
+.passagem .rotulo{position:absolute;top:66px;transition:top .2s;left:50%;transform:translateX(-50%);white-space:nowrap;font:600 15px/1 var(--fonte);color:#fff;
+  background:rgba(18,44,36,.9);padding:9px 14px;border-radius:999px;pointer-events:none;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+@keyframes pulsa{0%{box-shadow:0 0 0 0 rgba(197,106,67,.7),0 6px 22px rgba(0,0,0,.4)}70%{box-shadow:0 0 0 22px rgba(197,106,67,0),0 6px 22px rgba(0,0,0,.4)}100%{box-shadow:0 0 0 0 rgba(197,106,67,0),0 6px 22px rgba(0,0,0,.4)}}
+
+/* ---------- carregando */
+.carregando{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:15;display:flex;align-items:center;gap:12px;padding:14px 20px;border-radius:999px;
+  background:var(--vidro);font:500 16px/1 var(--fonte);opacity:0;pointer-events:none;transition:opacity .25s}
+.carregando.ve{opacity:1}
+.carregando i{width:20px;height:20px;border-radius:50%;border:3px solid rgba(239,231,218,.3);border-top-color:var(--areia);animation:gira .8s linear infinite}
+@keyframes gira{to{transform:rotate(360deg)}}
+
+/* ---------- folhas (planta e escolha de apartamento) */
+.fundo{position:fixed;inset:0;z-index:30;background:rgba(8,20,16,.6);opacity:0;pointer-events:none;transition:opacity .25s}
+.fundo.aberto{opacity:1;pointer-events:auto}
+.folha{position:fixed;left:0;right:0;bottom:0;z-index:31;max-height:88dvh;overflow:auto;background:var(--verde-fundo);border-radius:24px 24px 0 0;
+  padding:12px 16px calc(20px + var(--seg-bot));transform:translateY(105%);transition:transform .32s cubic-bezier(.2,.7,.2,1);box-shadow:0 -12px 40px rgba(0,0,0,.45)}
+.folha.aberta{transform:none}
+.folha__puxador{width:44px;height:5px;border-radius:5px;background:rgba(239,231,218,.35);margin:0 auto 12px}
+.folha__cab{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.folha__cab h2{margin:0;font:600 20px/1.2 var(--fonte)}
+.folha__dica{margin:0 0 12px;color:var(--areia-suave);font-size:15px}
+.planta{background:var(--verde);border:1px solid var(--linha);border-radius:16px;padding:10px}
+.planta svg{display:block;width:100%;height:auto;max-height:62dvh}
+.sala-g rect{fill:rgba(239,231,218,.08);stroke:rgba(239,231,218,.4);stroke-width:.04;cursor:pointer}
+.sala-g.ativo rect{fill:rgba(197,106,67,.4);stroke:var(--terracota-claro)}
 .sala-g text{fill:var(--areia);font-family:var(--fonte);pointer-events:none}
+.sala-g,.predio-g{outline:none}
 .fosso rect{fill:url(#hachura);stroke:rgba(239,231,218,.2);stroke-width:.03}
-.lista{display:grid;gap:2px;margin:0;padding:0;list-style:none}
-.lista button{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;gap:12px;align-items:baseline;
-  padding:10px 12px;border-radius:8px;cursor:pointer;font:400 15px/1.2 var(--fonte);color:var(--areia)}
-.lista button:hover{background:rgba(239,231,218,.06)}
-.lista button:focus-visible{outline:2px solid var(--terracota-claro);outline-offset:1px}
-.lista button[aria-current="true"]{background:rgba(197,106,67,.22)}
-.lista .m2{font-variant-numeric:tabular-nums;color:var(--areia-suave);font-size:14px}
-.fotos{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
-.fotos button{padding:0;border:1px solid var(--linha);border-radius:10px;overflow:hidden;background:none;cursor:pointer;color:var(--areia);font:500 12px/1.3 var(--fonte);text-align:left}
-.fotos img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}.fotos span{display:block;padding:6px 8px}
-.foto-grande{position:fixed;inset:0;background:rgba(10,24,19,.92);display:none;align-items:center;justify-content:center;z-index:50;cursor:zoom-out}
-.foto-grande.aberta{display:flex}.foto-grande img{max-width:96vw;max-height:92vh;border-radius:8px}
-.nota{margin:auto 0 0;font:400 12px/1.5 var(--fonte);color:var(--areia-suave)}
-.passagem{width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;cursor:pointer;
-  background:rgba(31,74,60,.72);border:2px solid var(--areia);box-shadow:0 4px 18px rgba(0,0,0,.35);
-  display:grid;place-items:center;transition:transform .2s, background .2s}
-.passagem:hover{transform:scale(1.1);background:var(--terracota)}
-.passagem svg{width:18px;height:18px}
-.passagem .rotulo{position:absolute;top:50px;left:50%;transform:translateX(-50%);white-space:nowrap;
-  font:500 13px/1 var(--fonte);color:var(--areia);background:rgba(22,54,44,.88);padding:6px 10px;border-radius:999px;pointer-events:none}
-.pnlm-load-box{background:rgba(22,54,44,.9);font-family:var(--fonte)}
-.predio-g rect{fill:rgba(239,231,218,.07);stroke:rgba(239,231,218,.4);stroke-width:1.2;cursor:pointer;transition:fill .2s}
-.predio-g:hover rect{fill:rgba(239,231,218,.16)}
-.predio-g.ativo rect{fill:rgba(197,106,67,.35);stroke:var(--terracota-claro)}
+.predio-g rect{fill:rgba(239,231,218,.08);stroke:rgba(239,231,218,.45);stroke-width:1.2;cursor:pointer}
+.predio-g.ativo rect{fill:rgba(197,106,67,.4);stroke:var(--terracota-claro)}
 .predio-g text{fill:var(--areia);font-family:var(--fonte);pointer-events:none}
-@media (max-width: 820px){
-  .corpo{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto}
-  .painel{border-left:0;border-top:1px solid var(--linha);flex-direction:row;overflow-x:auto;overflow-y:hidden;padding:12px 16px;gap:12px}
-  .painel h2,.nota,.bloco-lista{display:none}
-  .planta{flex:none;width:min(100%,560px);padding:6px}
-  .titulo p{display:none}
+.aptos{display:grid;gap:12px}
+.aptos button{all:unset;cursor:pointer;display:flex;align-items:center;gap:16px;padding:16px;border-radius:18px;background:var(--verde);border:1.5px solid var(--linha)}
+.aptos button[aria-current="true"]{border-color:var(--terracota);background:rgba(197,106,67,.18)}
+.aptos .n{flex:none;width:60px;height:60px;border-radius:14px;background:rgba(239,231,218,.1);display:grid;place-items:center;font:300 30px/1 var(--fonte);color:var(--terracota-claro)}
+.aptos b{display:block;font:600 18px/1.2 var(--fonte)}
+.aptos span{font:400 14px/1.35 var(--fonte);color:var(--areia-suave)}
+.fotos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.fotos button{all:unset;cursor:pointer;border-radius:14px;overflow:hidden;border:1px solid var(--linha)}
+.fotos img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.fotos span{display:block;padding:8px 10px;font:500 14px/1.2 var(--fonte)}
+.foto-grande{position:fixed;inset:0;z-index:40;background:rgba(10,24,19,.95);display:none;align-items:center;justify-content:center}
+.foto-grande.aberta{display:flex}.foto-grande img{max-width:96vw;max-height:88dvh;border-radius:10px}
+.nota{margin:16px 0 0;font:400 12.5px/1.5 var(--fonte);color:var(--areia-suave)}
+
+/* ---------- tutorial da primeira vez */
+.tuto{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:24px;text-align:center;
+  background:rgba(8,22,17,.72);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+.tuto[hidden]{display:none}
+.tuto__mao{width:96px;height:96px;animation:arrasta 2.2s ease-in-out infinite}
+.tuto__mao.toca{animation:toca 1.4s ease-in-out infinite}
+@keyframes arrasta{0%,100%{transform:translateX(-60px) rotate(-8deg)}50%{transform:translateX(60px) rotate(8deg)}}
+@keyframes toca{0%,100%{transform:scale(1)}50%{transform:scale(.82) translateY(6px)}}
+.tuto h2{margin:0;font:700 28px/1.15 var(--fonte);max-width:420px}
+.tuto p{margin:0;font:400 18px/1.4 var(--fonte);color:var(--areia-suave);max-width:380px}
+.tuto__pontos{display:flex;gap:8px}.tuto__pontos i{width:10px;height:10px;border-radius:50%;background:rgba(239,231,218,.3)}.tuto__pontos i.on{background:var(--terracota)}
+.tuto button{all:unset;cursor:pointer;min-width:220px;height:62px;border-radius:999px;background:var(--terracota);color:#fff;font:700 20px/62px var(--fonte);text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+
+@media (min-width: 900px){
+  .folha{left:auto;right:16px;bottom:16px;top:16px;width:440px;max-height:none;border-radius:24px;transform:translateX(110%)}
+  .folha.aberta{transform:none}
+  .comodos{justify-content:center}
 }
-@media (prefers-reduced-motion: reduce){ .passagem,.dica{transition:none} }
+@media (prefers-reduced-motion: reduce){ .passagem,.tuto__mao,.carregando i{animation:none} .folha{transition:none} }
 </style>
 
-<div class="app">
-  <header class="topo">
-    <div class="marca" aria-label="Construtora Jardins">
-      <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true"><path d="M60 16 V60 A21 21 0 0 1 18 60" fill="none" stroke="#EFE7DA" stroke-width="13" stroke-linecap="round"/><path d="M60 24 C60 10 72 3 90 3 C90 17 80 27 60 24 Z" fill="#C56A43"/></svg>
-      <div><div class="c">CONSTRUTORA</div><div class="j">jardins</div></div>
-    </div>
-    <div class="titulo">
-      <h1 id="tituloTipo">Residencial Jardins I</h1>
-      <p id="subTipo">Jardim do Ingá, Luziânia · visita 360°</p>
-    </div>
-  </header>
-  <nav class="abas" id="abas" aria-label="Escolha o que visitar"></nav>
-  <main class="corpo">
-    <section class="visor" aria-label="Visita 360 graus">
-      <div id="pano"></div>
-      <div class="comodo-atual" aria-live="polite"><b id="nomeAtual"></b><span id="areaAtual"></span></div>
-      <div class="dica" id="dica">Arraste para olhar em volta · toque nos círculos para andar</div>
-    </section>
-    <aside class="painel">
-      <h2 id="tituloPlanta">Planta</h2>
-      <div class="planta"><svg id="planta" role="group" aria-label="Planta: toque num cômodo para ir até ele"></svg></div>
-      <div class="fotos" id="fotos" hidden>
-        <button type="button" data-img="x_fachada.jpg"><img src="x_fachada.jpg" alt="Fachada do Residencial Jardins I vista da rua"><span>Fachada</span></button>
-        <button type="button" data-img="x_aerea.jpg"><img src="x_aerea.jpg" alt="Vista aérea do prédio no bairro"><span>Vista aérea</span></button>
-      </div>
-      <div class="foto-grande" id="fotoGrande" role="dialog" aria-label="Foto ampliada"><img alt=""></div>
-      <div class="bloco-lista">
-        <h2>Cômodos</h2>
-        <ul class="lista" id="lista"></ul>
-      </div>
-      <p class="nota">Medidas do projeto aprovado pela Prefeitura de Luziânia, conferidas na obra em 28/09/2026. Móveis em tamanho real, decoração e acabamentos ilustrativos. Carro: modelo "CarConcept" de Eric Chadwick / Darmstadt Graphics Group, CC BY 4.0.</p>
-    </aside>
-  </main>
+<div id="pano" role="img" aria-label="Visita 360 graus do apartamento"></div>
+
+<header class="topo">
+  <a class="b-redondo" id="sair" href="/" aria-label="Voltar para o site"><svg viewBox="0 0 24 24" fill="none" stroke="#EFE7DA" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></a>
+  <div class="onde" aria-live="polite"><b id="nomeAtual">Carregando…</b><span id="areaAtual"></span></div>
+  <button class="b-apto" id="abreAptos" type="button" aria-haspopup="dialog"><span id="rotuloApto">Apartamentos</span><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+</header>
+
+<div class="carregando" id="carregando" role="status"><i></i>Carregando o cômodo…</div>
+
+<nav class="base" aria-label="Cômodos">
+  <p class="base__rotulo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E9A07F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5a2 2 0 0 1 4 0v6m0-2a2 2 0 0 1 4 0v4a7 7 0 0 1-7 7h-.5A6.5 6.5 0 0 1 3 13.5V12a2 2 0 0 1 4 0"/></svg><span id="baseRotulo">Toque para ir até o cômodo</span></p>
+  <div class="comodos" id="comodos"></div>
+</nav>
+
+<div class="fundo" id="fundo"></div>
+<section class="folha" id="folhaPlanta" role="dialog" aria-modal="true" aria-labelledby="tituloPlanta">
+  <div class="folha__puxador"></div>
+  <div class="folha__cab"><h2 id="tituloPlanta">Planta</h2><button class="b-redondo" type="button" data-fecha aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="#EFE7DA" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <p class="folha__dica">Toque num cômodo da planta para ir até ele.</p>
+  <div class="planta"><svg id="planta" role="group" aria-label="Planta: toque num cômodo para ir até ele"></svg></div>
+  <p class="nota">Medidas do projeto aprovado pela Prefeitura de Luziânia. Móveis em tamanho real; decoração e acabamentos ilustrativos. Carro: "CarConcept", Eric Chadwick / Darmstadt Graphics Group, CC BY 4.0.</p>
+</section>
+<section class="folha" id="folhaAptos" role="dialog" aria-modal="true" aria-labelledby="tituloAptos">
+  <div class="folha__puxador"></div>
+  <div class="folha__cab"><h2 id="tituloAptos">Qual você quer visitar?</h2><button class="b-redondo" type="button" data-fecha aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="#EFE7DA" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="aptos" id="aptos"></div>
+  <div class="fotos">
+    <button type="button" data-img="x_fachada.jpg"><img src="x_fachada.jpg" alt="Fachada do Residencial Jardins I vista da rua" loading="lazy"><span>Fachada</span></button>
+    <button type="button" data-img="x_aerea.jpg"><img src="x_aerea.jpg" alt="Vista aérea do prédio no bairro" loading="lazy"><span>Vista aérea</span></button>
+  </div>
+</section>
+<div class="foto-grande" id="fotoGrande" role="dialog" aria-label="Foto ampliada"><img alt=""></div>
+
+<div class="tuto" id="tuto" hidden role="dialog" aria-modal="true" aria-labelledby="tutoTitulo">
+  <svg class="tuto__mao" id="tutoMao" viewBox="0 0 24 24" fill="none" stroke="#EFE7DA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5a2 2 0 0 1 4 0v6m0-2a2 2 0 0 1 4 0v4a7 7 0 0 1-7 7h-.5A6.5 6.5 0 0 1 3 13.5V12a2 2 0 0 1 4 0"/></svg>
+  <h2 id="tutoTitulo">Arraste o dedo na tela para olhar em volta</h2>
+  <p id="tutoTexto">Como se você estivesse dentro do apartamento.</p>
+  <div class="tuto__pontos"><i class="on"></i><i></i></div>
+  <button type="button" id="tutoBotao">Próximo</button>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
@@ -198,7 +240,9 @@ const PASSAGENS = {
 };
 const yawPara = (de, para) => Math.atan2(para[1]-de[1], para[0]-de[0]) * 180/Math.PI;
 const pitchPara = (de, para, olho=1.55, z=1.0) => Math.atan2(z-olho, Math.hypot(para[0]-de[0], para[1]-de[1])) * 180/Math.PI;
-const seta = '<svg viewBox="0 0 24 24" fill="none" stroke="#EFE7DA" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+// ================= INTERFACE (29/09: tela cheia, botões grandes, tutorial) =================
+const $ = id => document.getElementById(id);
+const seta = '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
 function criaPassagem(div, txt){
   div.classList.add("passagem"); div.innerHTML = seta;
   const r = document.createElement("span"); r.className = "rotulo"; r.textContent = txt; div.appendChild(r);
@@ -206,87 +250,179 @@ function criaPassagem(div, txt){
 }
 const cenas = {};
 for (const [id, c] of Object.entries(CENAS)) {
-  cenas[id] = {type:"equirectangular", panorama:"panos/" + c.pano + ".jpg?v=" + VERSAO_PANOS, yaw:c.yaw ?? 0, pitch:-4, hfov:100,
+  cenas[id] = {type:"equirectangular", panorama:"panos/" + c.pano + ".jpg?v=" + VERSAO_PANOS, yaw:c.yaw ?? 0, pitch:-4, hfov: matchMedia("(max-width: 700px)").matches ? 95 : 105,
     hotSpots:(PASSAGENS[id]||[]).map(([alvo, p, rot, yawChegada]) => ({
       yaw:yawPara(c.cam, p), pitch:pitchPara(c.cam, p, c.olho||1.55), type:"scene", sceneId:alvo,
       targetYaw: yawChegada ?? (CENAS[alvo].tipo === c.tipo ? yawPara(p, CENAS[alvo].cam) : CENAS[alvo].yaw), targetPitch:-4,
       createTooltipFunc:criaPassagem, createTooltipArgs: rot || CENAS[alvo].nome }))};
 }
-// ?cena=q_sala abre direto num cômodo (usado pelos botões do site)
+// ?cena=q_sala abre direto num cômodo (botões do site)
 const CENA_INICIAL = (()=>{ const c = new URLSearchParams(location.search).get("cena"); return c && CENAS[c] ? c : "estacionamento"; })();
-const viewer = pannellum.viewer("pano", {default:{firstScene:CENA_INICIAL, sceneFadeDuration:600, autoLoad:true, showControls:false, compass:false, minHfov:55, maxHfov:115, friction:.12}, scenes:cenas});
+const viewer = pannellum.viewer("pano", {default:{firstScene:CENA_INICIAL, sceneFadeDuration:500, autoLoad:true, showControls:false, compass:false,
+  minHfov:55, maxHfov:115, friction:.15, autoRotate:-2}, scenes:cenas});
 
-// ---------- abas
-const abas = document.getElementById("abas");
+// sair: volta para o site da construtora
+if (!/construtorajardins\.com\.br$/.test(location.hostname)) $("sair").href = "https://construtorajardins.com.br/";
+
+// ---------- ícones dos cômodos
+const IC = {
+  sala:'<path d="M4 12V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3"/><path d="M3 13a2 2 0 0 1 4 0v2h10v-2a2 2 0 0 1 4 0v5H3z"/><path d="M5 18v2M19 18v2"/>',
+  cozinha:'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M4 10h16M8 6.5h.01M11 6.5h.01M9 14v3"/>',
+  servico:'<rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="13" r="4.5"/><path d="M8 6.5h.01M11 6.5h.01"/>',
+  banheiro:'<path d="M4 12h16v2a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6z"/><path d="M6 12V5a2 2 0 0 1 4 0"/><path d="M7 20l-1 2M17 20l1 2"/>',
+  quarto:'<path d="M3 18V7M3 13h18v5M21 13a3 3 0 0 0-3-3h-7v3"/><circle cx="7" cy="10.5" r="1.6"/>',
+  escritorio:'<rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/>',
+  circulacao:'<path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/><path d="M4 21h16M14 12h.01"/>',
+  varanda:'<path d="M3 21h18M5 21v-8M19 21v-8M3 13h18M9 13v8M15 13v8"/><circle cx="12" cy="6" r="3"/>',
+  carro:'<path d="M5 17h14v-5l-2-5H7l-2 5z"/><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/><path d="M5 12h14"/>',
+  hall:'<path d="M5 21V4h11v17M3 21h18"/><path d="M13 12h.01"/>',
+  escada:'<path d="M3 20h5v-5h5v-5h5V5h3"/>',
+  planta:'<rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M3 11h7v9M10 4v3.5M14 11h7M14 11v3.5"/>'
+};
+function icone(nome){
+  const n = nome.toLowerCase();
+  const k = n.includes("sala") ? "sala" : n.includes("cozinha") ? "cozinha" : n.includes("serviço") ? "servico" : n.includes("banheiro") ? "banheiro"
+    : n.includes("escritório") ? "escritorio" : n.includes("quarto") ? "quarto" : n.includes("circula") ? "circulacao" : n.includes("varanda") ? "varanda"
+    : n.includes("estacion") ? "carro" : n.includes("andares") ? "escada" : "hall";
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${IC[k]}</svg>`;
+}
+const curto = n => n.replace(" ou hóspedes","").replace(" e jantar","").replace("Quarto do casal","Quarto casal").replace("Quarto com varanda","Quarto varanda");
+
+// ---------- barra de cômodos
+const comodos = $("comodos"); let tipoBarra = null;
+function montaBarra(tipo){
+  tipoBarra = tipo; comodos.innerHTML = "";
+  const bp = document.createElement("button"); bp.type = "button"; bp.className = "b-planta";
+  bp.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${IC.planta}</svg>${tipo === "predio" ? "O prédio" : "Planta"}`;
+  bp.addEventListener("click", () => abre("folhaPlanta")); comodos.appendChild(bp);
+  for (const [id, c] of Object.entries(CENAS)) { if (c.tipo !== tipo) continue;
+    const b = document.createElement("button"); b.type = "button"; b.dataset.id = id; b.innerHTML = icone(c.nome) + curto(c.nome);
+    b.addEventListener("click", () => vai(id)); comodos.appendChild(b); }
+  if (tipo === "predio") for (const [k, t] of Object.entries(TIPOS)) { if (k === "predio") continue;
+    const b = document.createElement("button"); b.type = "button"; b.innerHTML = icone("sala") + t.aba.replace(" com varanda","") ;
+    b.addEventListener("click", () => vai(t.primeira)); comodos.appendChild(b); }
+}
+function vai(id){ if (id !== viewer.getScene()) { $("carregando").classList.add("ve"); viewer.loadScene(id); } fecha(); }
+
+// ---------- escolha de apartamento
+const aptos = $("aptos"); const NUM = {terreo:"T", q3:"3", q2:"2"};
 for (const [k, t] of Object.entries(TIPOS)) {
   const b = document.createElement("button"); b.type = "button"; b.dataset.tipo = k;
-  b.innerHTML = `${t.aba}<small>${t.sub}</small>`; b.addEventListener("click", () => viewer.loadScene(t.primeira)); abas.appendChild(b);
+  b.innerHTML = `<span class="n">${k === "predio" ? '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E9A07F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V4h10v17M14 9h6v12M3 21h18M8 8h2M8 12h2M8 16h2"/></svg>' : NUM[k]}</span><span><b>${t.aba}</b><span>${k === "predio" ? "Estacionamento, entrada e escada" : t.unidades}</span></span>`;
+  b.addEventListener("click", () => vai(t.primeira)); aptos.appendChild(b);
 }
-// ---------- planta (desenhada de novo a cada troca de tipologia)
-const NS = "http://www.w3.org/2000/svg", svg = document.getElementById("planta"), lista = document.getElementById("lista");
+const ROTULO = {predio:"O prédio", terreo:"Térreo", q3:"3 quartos", q2:"2 quartos"};
+
+// ---------- folhas
+function abre(id){ $("fundo").classList.add("aberto"); $(id).classList.add("aberta"); }
+function fecha(){ $("fundo").classList.remove("aberto"); document.querySelectorAll(".folha").forEach(f => f.classList.remove("aberta")); }
+$("abreAptos").addEventListener("click", () => abre("folhaAptos"));
+$("fundo").addEventListener("click", fecha);
+document.querySelectorAll("[data-fecha]").forEach(b => b.addEventListener("click", fecha));
+const fg = $("fotoGrande");
+document.querySelectorAll(".fotos button").forEach(b => b.addEventListener("click", () => { fg.querySelector("img").src = b.dataset.img; fg.querySelector("img").alt = b.querySelector("img").alt; fg.classList.add("aberta"); }));
+fg.addEventListener("click", () => fg.classList.remove("aberta"));
+document.addEventListener("keydown", e => { if (e.key === "Escape") { fg.classList.remove("aberta"); fecha(); } });
+
+// ---------- planta (na folha)
+const NS = "http://www.w3.org/2000/svg", svg = $("planta");
 let tipoDesenhado = null, grupos = {}, cone, ponto;
 function desenhaPredio(){
-  // corte esquemático: 3 pavimentos, cada unidade clicável
-  svg.setAttribute("viewBox","0 0 320 230");
+  svg.setAttribute("viewBox","0 0 320 215");
   const U = [
-    {r:"2º andar", y:20, u:[["303 · 2 quartos","d_sala",100],["301 · 3 quartos","q_sala",110],["302 · 3 quartos","q_sala",110]]},
-    {r:"1º andar", y:85, u:[["203 · 2 quartos","d_sala",100],["201 · 3 quartos","q_sala",110],["202 · 3 quartos","q_sala",110]]},
-    {r:"Térreo",   y:150,u:[["Estacionamento","estacionamento",100],["101 · 3 quartos","t_sala",110],["102 · 3 quartos","t_sala",110]]}];
-  let h = `<text x="0" y="218" font-size="11" fill="rgba(239,231,218,.6)" font-family="Outfit">toque numa unidade para entrar · hall e escada entre elas</text>`;
-  svg.innerHTML = h;
+    {y:10, u:[["303 · 2 quartos","d_sala",100],["301 · 3 quartos","q_sala",110],["302 · 3 quartos","q_sala",110]]},
+    {y:75, u:[["203 · 2 quartos","d_sala",100],["201 · 3 quartos","q_sala",110],["202 · 3 quartos","q_sala",110]]},
+    {y:140,u:[["Garagem · entrada","estacionamento",100],["101 · 3 quartos","t_sala",110],["102 · 3 quartos","t_sala",110]]}];
+  svg.innerHTML = ""; grupos = {};
   for (const a of U) { let x = 0;
     for (const [nome, cena, w] of a.u) {
-      const g = document.createElementNS(NS,"g"); g.setAttribute("class","predio-g"); g.setAttribute("tabindex","0"); g.setAttribute("role","button");
-      g.setAttribute("aria-label", nome); g.dataset.cena = cena;
-      g.innerHTML = `<rect x="${x+1}" y="${a.y}" width="${w-4}" height="56" rx="6"/><text x="${x+w/2-1}" y="${a.y+25}" text-anchor="middle" font-size="12.5" font-weight="600">${nome.split(" · ")[0]}</text><text x="${x+w/2-1}" y="${a.y+42}" text-anchor="middle" font-size="10.5" opacity=".75">${nome.split(" · ")[1]||a.r}</text>`;
-      g.addEventListener("click", () => viewer.loadScene(cena)); g.addEventListener("keydown", e => { if (e.key==="Enter"||e.key===" "){e.preventDefault(); viewer.loadScene(cena);} });
-      svg.appendChild(g); x += w; } }
-  lista.innerHTML = "";
-  for (const id of ["estacionamento","hall_terreo","hall_andar"]) addLista(id);
+      const g = document.createElementNS(NS,"g"); g.setAttribute("class","predio-g"); g.setAttribute("role","button"); g.setAttribute("tabindex","0"); g.setAttribute("aria-label", nome);
+      const [n1, n2] = nome.split(" · ");
+      g.innerHTML = `<rect x="${x+2}" y="${a.y}" width="${w-6}" height="58" rx="8"/><text x="${x+w/2-1}" y="${a.y+27}" text-anchor="middle" font-size="15" font-weight="600">${n1}</text><text x="${x+w/2-1}" y="${a.y+45}" text-anchor="middle" font-size="11.5" opacity=".8">${n2}</text>`;
+      g.addEventListener("click", () => vai(cena)); svg.appendChild(g); x += w; } }
 }
-function addLista(id){ const c = CENAS[id]; const li = document.createElement("li");
-  li.innerHTML = `<button type="button" data-id="${id}"><span>${c.nome}</span><span class="m2">${/^[0-9]/.test(c.area) && c.area.length < 7 ? c.area + " m²" : ""}</span></button>`;
-  li.firstChild.addEventListener("click", () => viewer.loadScene(id)); lista.appendChild(li); }
 function desenhaApto(tipo){
   const T = TIPOS[tipo], M = 0.25, x0 = T.x0 || 0;
   svg.setAttribute("viewBox", `${x0-M} ${-M-0.2} ${T.w+2*M} ${T.h+2*M+0.2}`);
   svg.innerHTML = `<defs><pattern id="hachura" width=".25" height=".25" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width=".25" height=".25" fill="rgba(0,0,0,.15)"/><line x1="0" y1="0" x2="0" y2=".25" stroke="rgba(239,231,218,.25)" stroke-width=".05"/></pattern></defs>`;
   for (const f of T.fossos) { const g = document.createElementNS(NS,"g"); g.setAttribute("class","fosso"); g.innerHTML = `<rect x="${f.x[0]}" y="${f.y[0]}" width="${f.x[1]-f.x[0]}" height="${f.y[1]-f.y[0]}"/>`; svg.appendChild(g); }
-  grupos = {}; lista.innerHTML = "";
+  grupos = {};
   for (const [id, c] of Object.entries(CENAS)) { if (c.tipo !== tipo) continue;
-    const g = document.createElementNS(NS,"g"); g.setAttribute("class","sala-g"); g.setAttribute("tabindex","0"); g.setAttribute("role","button");
-    g.setAttribute("aria-label", `${c.nome}, ${c.area} metros quadrados`);
+    const g = document.createElementNS(NS,"g"); g.setAttribute("class","sala-g"); g.setAttribute("role","button"); g.setAttribute("tabindex","0");
+    g.setAttribute("aria-label", c.nome);
     const w = c.x[1]-c.x[0], h = c.y[1]-c.y[0], cx = c.x[0]+w/2, cy = c.y[0]+h/2, peq = w < 1.6 || h < 1.2;
-    const fs = peq ? .26 : .34, nome = c.nome.replace(" e lavanderia","").replace(" ou hóspedes","").replace(" e jantar","").replace("Área de serviço", w < 2.4 ? "Serviço" : "Área de serviço");
-    g.innerHTML = `<rect x="${c.x[0]}" y="${c.y[0]}" width="${w}" height="${h}" rx=".04"/><text x="${cx}" y="${peq ? cy+.1 : cy-.05}" text-anchor="middle" font-size="${fs}" font-weight="500">${nome}</text>${peq ? "" : `<text x="${cx}" y="${cy+.40}" text-anchor="middle" font-size=".28" opacity=".75">${/^[0-9]/.test(c.area) ? c.area + " m²" : ""}</text>`}`;
-    g.addEventListener("click", () => viewer.loadScene(id)); g.addEventListener("keydown", e => { if (e.key==="Enter"||e.key===" "){e.preventDefault(); viewer.loadScene(id);} });
-    svg.appendChild(g); grupos[id] = g; addLista(id); }
-  cone = document.createElementNS(NS,"path"); cone.setAttribute("fill","rgba(233,160,127,.45)");
-  ponto = document.createElementNS(NS,"circle"); ponto.setAttribute("r",".16"); ponto.setAttribute("fill","#C56A43"); ponto.setAttribute("stroke","#EFE7DA"); ponto.setAttribute("stroke-width",".05");
+    const fs = peq ? .28 : .38, nome = curto(c.nome).replace("Área de serviço", w < 2.4 ? "Serviço" : "Área de serviço").replace("Circulação", w > 3 ? "Circulação" : "Corredor");
+    g.innerHTML = `<rect x="${c.x[0]}" y="${c.y[0]}" width="${w}" height="${h}" rx=".04"/><text x="${cx}" y="${cy+.12}" text-anchor="middle" font-size="${fs}" font-weight="600">${nome}</text>`;
+    g.addEventListener("click", () => vai(id)); svg.appendChild(g); grupos[id] = g; }
+  cone = document.createElementNS(NS,"path"); cone.setAttribute("fill","rgba(233,160,127,.5)");
+  ponto = document.createElementNS(NS,"circle"); ponto.setAttribute("r",".18"); ponto.setAttribute("fill","#C56A43"); ponto.setAttribute("stroke","#EFE7DA"); ponto.setAttribute("stroke-width",".05");
   svg.appendChild(cone); svg.appendChild(ponto);
 }
-const fotos = document.getElementById("fotos"), fg = document.getElementById("fotoGrande");
-fotos.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { fg.querySelector("img").src = b.dataset.img; fg.querySelector("img").alt = b.querySelector("img").alt; fg.classList.add("aberta"); }));
-fg.addEventListener("click", () => fg.classList.remove("aberta"));
-document.addEventListener("keydown", e => { if (e.key === "Escape") fg.classList.remove("aberta"); });
+
+// ---------- atualiza tudo quando troca de cômodo
 function atualiza(){
-  const id = viewer.getScene(), c = CENAS[id], T = TIPOS[c.tipo];
-  fotos.hidden = c.tipo !== "predio";
+  const id = viewer.getScene(), c = CENAS[id];
   if (tipoDesenhado !== c.tipo) { tipoDesenhado = c.tipo; cone = ponto = null; c.tipo === "predio" ? desenhaPredio() : desenhaApto(c.tipo); }
-  document.getElementById("tituloTipo").textContent = T.titulo;
-  document.getElementById("subTipo").textContent = T.unidades + " · Jardim do Ingá, Luziânia";
-  document.getElementById("tituloPlanta").textContent = c.tipo === "predio" ? "O prédio" : "Planta do apartamento";
-  document.getElementById("nomeAtual").textContent = c.nome;
-  document.getElementById("areaAtual").textContent = /^[0-9]+,[0-9]+$/.test(c.area) ? c.area + " m² · conforme projeto" : c.area;
-  abas.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.tipo === c.tipo ? "true" : "false"));
+  if (tipoBarra !== c.tipo) montaBarra(c.tipo);
+  $("nomeAtual").textContent = c.nome;
+  $("areaAtual").textContent = /^[0-9]+,[0-9]+$/.test(c.area) ? c.area + " m²" : (c.tipo === "predio" ? "Residencial Jardins I" : "");
+  $("rotuloApto").textContent = ROTULO[c.tipo];
+  $("tituloPlanta").textContent = c.tipo === "predio" ? "Escolha o apartamento" : "Planta · " + TIPOS[c.tipo].aba;
+  $("baseRotulo").textContent = c.tipo === "predio" ? "Toque para entrar no prédio ou num apartamento" : "Toque para ir até o cômodo";
+  aptos.querySelectorAll("button").forEach(b => b.setAttribute("aria-current", b.dataset.tipo === c.tipo ? "true" : "false"));
   for (const [k,g] of Object.entries(grupos)) g.classList.toggle("ativo", k === id);
-  lista.querySelectorAll("button").forEach(b => b.setAttribute("aria-current", b.dataset.id === id ? "true" : "false"));
+  comodos.querySelectorAll("button[data-id]").forEach(b => { const on = b.dataset.id === id; b.setAttribute("aria-current", on ? "true" : "false");
+    if (on) b.scrollIntoView({behavior:"smooth", inline:"center", block:"nearest"}); });
   if (ponto) { const [x,y] = c.cam; ponto.setAttribute("cx", x); ponto.setAttribute("cy", y); }
 }
-viewer.on("scenechange", () => setTimeout(atualiza, 30)); viewer.on("load", atualiza);
+viewer.on("scenechange", () => { $("carregando").classList.add("ve"); setTimeout(atualiza, 30); });
+viewer.on("load", () => { $("carregando").classList.remove("ve"); atualiza(); });
+$("carregando").classList.add("ve");
 (function laco(){ try { const c = CENAS[viewer.getScene()]; if (c && cone && c.cam && c.tipo !== "predio") { const [x,y] = c.cam;
   const yaw = viewer.getYaw()*Math.PI/180, meia = (viewer.getHfov()/2)*Math.PI/180, R = 1.3;
   const a = [x+R*Math.cos(yaw-meia), y+R*Math.sin(yaw-meia)], b = [x+R*Math.cos(yaw+meia), y+R*Math.sin(yaw+meia)];
   cone.setAttribute("d", `M${x} ${y} L${a[0]} ${a[1]} A${R} ${R} 0 0 1 ${b[0]} ${b[1]} Z`); } } catch(e){} requestAnimationFrame(laco); })();
-setTimeout(() => { document.getElementById("dica").style.opacity = 0; }, 7000);
+
+// ---------- nomes dos círculos que se encostam descem em degraus, para não ficar um em cima do outro
+setInterval(() => {
+  // 1) círculos que se encostam abrem em leque para os lados
+  const cs = [...document.querySelectorAll(".passagem")].filter(c => c.offsetParent);
+  cs.forEach(c => c.style.marginLeft = "-29px");
+  const cc = cs.map(c => ({c, b: c.getBoundingClientRect()})).sort((a, b) => a.b.left - b.b.left);
+  // corrente: da esquerda para a direita, cada círculo fica a pelo menos 66 px do anterior (se estiverem na mesma altura)
+  let run = [];
+  const fecha = () => { if (run.length > 1) { const desloc = run.map(x => x.nx - x.ox), medio = desloc.reduce((a, b) => a + b, 0) / run.length;
+      run.forEach((x, i) => x.c.style.marginLeft = (-29 + desloc[i] - medio) + "px"); } run = []; };
+  for (const x of cc) { const ox = x.b.left + x.b.width / 2, oy = x.b.top + x.b.height / 2, ant = run[run.length - 1];
+    if (ant && Math.abs(oy - ant.oy) < 70 && ox - ant.nx < 66) run.push({c: x.c, ox, oy, nx: ant.nx + 66});
+    else { fecha(); run.push({c: x.c, ox, oy, nx: ox}); } }
+  fecha();
+  // 2) nomes que ainda se encostam descem o necessário
+  const rs = [...document.querySelectorAll(".passagem .rotulo")].filter(r => r.offsetParent);
+  rs.forEach(r => r.style.top = "66px");
+  const cx = rs.map(r => ({r, b: r.getBoundingClientRect()})).sort((a, b) => a.b.top - b.b.top || a.b.left - b.b.left);
+  const postas = [];
+  for (const c of cx) { let d = 0, mexeu = true;
+    while (mexeu) { mexeu = false;
+      for (const p of postas) { const t = c.b.top + d, bo = c.b.bottom + d;
+        if (c.b.right + 6 > p.left && c.b.left < p.right + 6 && bo + 4 > p.top && t < p.bottom + 4) { d = p.bottom + 6 - c.b.top; mexeu = true; } } }
+    if (d) c.r.style.top = (66 + d) + "px";
+    postas.push({left: c.b.left, right: c.b.right, top: c.b.top + d, bottom: c.b.bottom + d}); }
+}, 250);
+
+// ---------- tutorial da primeira visita (2 passos)
+(function(){
+  let visto = false; try { visto = localStorage.getItem("tour_tuto_v1") === "1"; } catch(e){}
+  if (visto) return;
+  const t = $("tuto"), mao = $("tutoMao"), bt = $("tutoBotao"), pts = t.querySelectorAll(".tuto__pontos i"); let passo = 1;
+  t.hidden = false;
+  bt.addEventListener("click", () => {
+    if (passo === 1) { passo = 2; mao.classList.add("toca"); pts[0].classList.remove("on"); pts[1].classList.add("on");
+      $("tutoTitulo").textContent = "Toque nos botões de baixo para andar pelo apartamento";
+      $("tutoTexto").textContent = "Ou toque nos círculos laranja dentro da imagem."; bt.textContent = "Entendi, começar"; return; }
+    t.hidden = true; try { localStorage.setItem("tour_tuto_v1", "1"); } catch(e){}
+    // celular com Android: aproveita o toque para ocupar a tela inteira
+    if (matchMedia("(hover: none)").matches && document.documentElement.requestFullscreen) document.documentElement.requestFullscreen().catch(()=>{});
+  });
+})();
 </script>
